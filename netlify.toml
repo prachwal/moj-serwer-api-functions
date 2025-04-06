@@ -1,0 +1,11 @@
+[build]
+  functions = "functions"
+  publish = "public"
+
+[dev]
+  port = 8888
+  functions = "functions"
+
+[functions]
+  included_files = ["lib/*.mjs"]
+  node_bundler = "esbuild"
