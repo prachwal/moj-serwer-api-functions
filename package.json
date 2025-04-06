@@ -7,6 +7,16 @@
   "type": "module",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "dev": "netlify dev",
+    "build": "netlify build",
+    "deploy": "netlify deploy --prod"
+  },
+  "dependencies": {
+    "dotenv": "^16.4.7",
+    "googleapis": "^148.0.0",
+    "mongodb": "^6.15.0",
+    "openai": "^4.91.1",
+    "winston": "^3.17.0",
+    "youtube-transcript": "^1.2.1"
   }
 }
