@@ -14,5 +14,5 @@ export default async (req, context) => {
 };
 
 export const config = {
-  schedule: "@hourly", // Run at midnight every day
+  schedule: "@daily", // Run at midnight every day
 }; 
