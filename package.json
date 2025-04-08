@@ -18,5 +18,9 @@
     "openai": "^4.91.1",
     "winston": "^3.17.0",
     "youtube-transcript": "^1.2.1"
+  },
+  "devDependencies": {
+    "html-entities": "^2.6.0",
+    "yargs": "^17.7.2"
   }
 }

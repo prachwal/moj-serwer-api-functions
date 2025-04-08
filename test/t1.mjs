@@ -1,20 +1,12 @@
 // Utwórz plik test-runner.mjs (rozszerzenie .mjs dla modułów ES)
-import handlerFunction from '../functions/youtube-fetch-background.mjs'; // Importuj funkcję
-import 'dotenv/config'; // Załaduj zmienne środowiskowe z pliku .env
-
-// Pobierz token z pliku .env
-const authToken = process.env.BUILD_HOOK_SECRET;
+import handlerFunction from '../functions/daily-youtube-fetch-background.mjs'; // Importuj funkcję
 
 // Symuluj obiekt request
 const mockRequest = {
   httpMethod: 'GET',
   path: '/',
   headers: {
-    'content-type': 'application/json',
-    'Authorization': `Bearer ${authToken}`, // Użyj tokena z .env
-    get: function(headerName) {
-      return this[headerName];
-    }
+    'content-type': 'application/json'
   },
   queryStringParameters: {
     test: 'value'
