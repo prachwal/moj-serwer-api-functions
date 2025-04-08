@@ -1,4 +1,3 @@
-import { processYoutubeData } from "../lib/YoutubeProcessor.mjs"; // Import the function
 import { processYoutubeChannels } from '../lib/youtubeChannelProcessor.mjs';
 import { logger } from "../lib/logger.mjs"; // Import the shared logger
 
